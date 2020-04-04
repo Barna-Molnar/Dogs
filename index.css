@@ -13,16 +13,14 @@ html {
 }
 
 .container-content {
-    margin-left: 150px;
-    margin-right: 150px;
+    width: 850px;
+    margin: auto;
 }
 
 .container-nav-images {
     margin-top: 50px;
-    height: 300px;
-    background-color: #e3e3e3;
-    opacity: 0.8;
-    box-shadow: black 2px 1px 10px 2px;
+    background-color: #fff;
+    box-shadow: #444 0 0 8px;
 }
 
 .main-header {
@@ -103,18 +101,263 @@ html {
     margin-left: 10px;
 }
 
-.navbar {
-    margin-bottom: 10px;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+.hadi-navi {
     background-color: gray;
+    padding: 0%;
 }
 
-.navbar a {
+.hadi-navi a {
     float: left;
     text-align: center;
     padding: 12px;
     color: black;
     text-decoration: none;
     font-size: 17px;
+    width: 100%;
+}
+
+.vertical-menu>li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 20px;
+    width: 2px;
+    background-color: green;
+    top: calc(50% - 10px);
+}
+
+.vertical-menu>li:first-child::before {
+    display: none;
+}
+
+.vertical-menu>li {
+    position: relative;
+}
+
+.vertical-menu>li:hover .sub-menu {
+    top: 100%;
+    opacity: 1;
+    z-index: 10;
+    transition: top 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+.vertical-menu {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 0;
+    margin: 0;
+}
+
+.vertical-menu .sub-menu {
+    position: absolute;
+    top: 50%;
+    background-color: gray;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    background-color: #fff;
+    opacity: 0;
+}
+
+.vertical-menu .sub-menu>li {
+    height: 49px;
+    border-bottom: orange solid 0.5px;
+    display: grid;
+    align-items: center;
+}
+
+.vertical-menu .sub-menu>li:hover {
+    background-color: palegreen;
+}
+
+.vertical-menu .sub-menu>li:last-child {
+    border: 0;
+}
+
+.hadi-navi>ul>li:hover>a {
+    background-color: lightcoral;
+}
+
+
+/* Slide */
+
+.carousel-container>div>img {
+    width: 100%;
+}
+
+.carousel-container {
+    display: grid;
+    grid-template-columns: 350px auto;
+}
+
+.slide-content {
+    margin: 20px;
+}
+
+.slide-button {
+    text-transform: uppercase;
+    background-color: #d92020;
+    color: #fff;
+    font-weight: bolder;
+    border: 0;
+    padding: 5px 10px;
+}
+
+button>i {
+    font-size: 25px;
+    vertical-align: top;
+}
+
+.carousel-indicators {
+    justify-content: flex-end;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.carousel-indicators li.active {
+    background-color: chartreuse;
+}
+
+.carousel-indicators li {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: blueviolet;
+    border: 0 solid blueviolet;
+}
+
+
+/* divider text*/
+
+.divider-text {
+    margin: 45px auto;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid #eee;
+    border-top: 2px solid #eee;
+    box-shadow: gray;
+    background-color: transparent;
+    text-shadow: black 1px 1px 1px;
+    width: max-content;
+}
+
+
+/* Articles and advertisement*/
+
+.a-a-section {
+    display: grid;
+    grid-template-columns: 1fr 33%;
+    height: 1000px;
+    border: solid 0.5px #eee;
+    background-color: #fff;
+}
+
+.article-dogs {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    margin: 20px;
+    border-top: 1px solid #eee;
+    margin-bottom: 0;
+    padding-top: 20px;
+    grid-gap: 20px;
+}
+
+.article-cim>a {
+    color: indigo;
+}
+
+.article-image>img {
+    height: 200px;
+    width: 250px;
+}
+
+.advertisement {
+    background-color: #eee;
+    border: greenyellow 1px solid;
+    padding: 10px;
+}
+
+.form-in-advertisement {
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.margin-form {
+    margin-bottom: 10px;
+}
+
+.margin-form:last-child {
+    margin-bottom: 0;
+}
+
+input {
+    width: 100%;
+}
+
+.breeds-div {}
+
+.a-foundation {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    display: block;
+}
+
+.adopt>h5 {
+    margin: auto;
+}
+
+.facebook-advertissement {
+    border: indigo 2px solid;
+    padding: 10px;
+}
+
+.fb-adv-a-img>a>img {
+    height: 55px;
+    width: 55px;
+}
+
+.nested-box {
+    display: grid;
+    grid-template-columns: 60px calc(100% - 60px);
+    grid-gap: 5px;
+}
+
+.fb-right {
+    width: 100%;
+}
+
+.fb-adv-a-img {
+    border: black solid 0.5px;
+    padding: 2px;
+}
+
+.fb-button {
+    font-size: 12px;
+    padding: 3px 4px
+}
+
+button>i {
+    font-size: 14px;
+    vertical-align: middle;
+    margin-right: 2px;
+}
+
+@media (max-width: 850px) {
+    .container-content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .container-content {
+        width: 95%;
+    }
+    .carousel-container {
+        grid-template-columns: auto;
+    }
 }
