@@ -134,11 +134,18 @@ html {
     position: relative;
 }
 
-.vertical-menu>li:hover .sub-menu {
+.vertical-menu>li:hover .sub-menu-home {
     top: 100%;
     opacity: 1;
     z-index: 10;
     transition: top 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+.sub-menu-home>li:hover .sub-menu-aboutIt {
+    left: 100%;
+    opacity: 1;
+    z-index: 10;
+    transition: left 0.3s ease-in, opacity 0.3s ease-in;
 }
 
 .vertical-menu {
@@ -149,7 +156,35 @@ html {
     margin: 0;
 }
 
-.vertical-menu .sub-menu {
+.sub-menu-aboutIt {
+    position: absolute;
+    left: 75%;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 0%;
+    list-style-type: none;
+    opacity: 0;
+}
+
+.sub-menu-aboutIt>li {
+    height: 49px;
+    border-bottom: orange solid 0.5px;
+    display: grid;
+    align-items: center;
+    box-shadow: orange 1px 1px 1px;
+}
+
+.sub-menu-aboutIt>li:first-child {
+    border-left: orange solid 0.5px;
+    ;
+}
+
+.sub-menu-aboutIt>li:hover {
+    background-color: lightcoral;
+}
+
+.vertical-menu .sub-menu-home {
     position: absolute;
     top: 50%;
     background-color: gray;
@@ -161,18 +196,18 @@ html {
     opacity: 0;
 }
 
-.vertical-menu .sub-menu>li {
+.vertical-menu .sub-menu-home>li {
     height: 49px;
     border-bottom: orange solid 0.5px;
     display: grid;
     align-items: center;
 }
 
-.vertical-menu .sub-menu>li:hover {
+.vertical-menu .sub-menu-home>li:hover {
     background-color: palegreen;
 }
 
-.vertical-menu .sub-menu>li:last-child {
+.vertical-menu .sub-menu-home>li:last-child {
     border: 0;
 }
 
