@@ -299,6 +299,10 @@ button>i {
     grid-gap: 20px;
 }
 
+.article-cim {
+    margin: 20px;
+}
+
 .article-cim>a {
     color: indigo;
 }
