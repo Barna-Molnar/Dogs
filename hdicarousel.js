@@ -27,8 +27,15 @@ const pitbullData = [
 // az adatok konvertalasa egy html stringge 
 
 var kutyok = pitbullData.map(function(kutyo, index) {
-    var visible = (index == 0) ? "visible" : "";
-    return `<div class="hadi-item ${visible}">  
+    var addclass;
+    if (index == 0) {
+        addclass = "visible"
+    } else if (index == 1) {
+        addclass = 'next'
+    } else {
+        addclass = ''
+    }
+    return `<div class="hadi-item  ${addclass}">  
     <div class="carousel-container">
         <div>
             <img src="${kutyo.photo}">
@@ -84,10 +91,19 @@ function valt() {
     spots[i].classList.remove("visible");
     if (i == itemsnew.length - 1) {
         itemsnew[0].classList.add("visible")
+        itemsnew[0].classList.remove("next")
+        itemsnew[1].classList.add("next");
         spots[0].classList.add("visible")
     } else {
         itemsnew[i + 1].classList.add("visible");
+        itemsnew[i + 1].classList.remove("next");
         spots[i + 1].classList.add("visible");
+        if (i == itemsnew.length - 2){
+            itemsnew[0].classList.add("next");
+        }else {
+            itemsnew[i + 2].classList.add("next");
+        }
+        
     }
 
 

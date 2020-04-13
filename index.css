@@ -389,19 +389,29 @@ button>i {
 
 /* hadi caorusel*/
 
+.hadi-item.next {
+    left: 100%;
+    opacity: 0;
+}
+
 .hadi-carousel {
     height: 350px;
     background-color: tomato;
     position: relative;
+    overflow: hidden;
 }
 
 .hadi-item {
-    display: none;
     height: 100%;
+    position: absolute;
+    left: -100%;
+    width: 100%;
+    transition: left 1s ease-out;
 }
 
 .hadi-item.visible {
     display: block;
+    left: 0;
 }
 
 .hadi-carousel .hadi-indicators {
