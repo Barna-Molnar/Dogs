@@ -386,6 +386,46 @@ button>i {
     margin-right: 2px;
 }
 
+
+/* hadi caorusel*/
+
+.hadi-carousel {
+    height: 350px;
+    background-color: tomato;
+    position: relative;
+}
+
+.hadi-item {
+    display: none;
+    height: 100%;
+}
+
+.hadi-item.visible {
+    display: block;
+}
+
+.hadi-carousel .hadi-indicators {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    position: absolute;
+    z-index: 10;
+    bottom: 20px;
+    right: 20px;
+    grid-gap: 5px;
+}
+
+.hadi-carousel .hadi-indicators .spot.visible {
+    background-color: chartreuse;
+}
+
+.hadi-carousel .hadi-indicators .spot {
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: blueviolet;
+}
+
 @media (max-width: 850px) {
     .container-content {
         width: 90%;
