@@ -98,14 +98,11 @@ function valt() {
         itemsnew[i + 1].classList.add("visible");
         itemsnew[i + 1].classList.remove("next");
         spots[i + 1].classList.add("visible");
-        if (i == itemsnew.length - 2){
+        if (i == itemsnew.length - 2) {
             itemsnew[0].classList.add("next");
-        }else {
+        } else {
             itemsnew[i + 2].classList.add("next");
         }
-        
     }
-
-
 }
 setInterval(function () { valt(); }, 3000);
