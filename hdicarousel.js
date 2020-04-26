@@ -1,30 +1,24 @@
 // adatok letrehozasa 
+import { pitbullData } from "./pittBullData.js"
 
-const pitbullData = [
 
-    {
-        name: "frbulldog",
-        photo: "/franciabull1x1.jpg",
-        headline: "Lorem ipsum",
-        text: "lorem ipsum dolor sit amen valami de nem irja automatikusan es nekem kurvara nincsne kedvem ennel t0bbet beleirni"
-    },
-
-    {
-        name: "Ali",
-        photo: "/IMG-1584223733316.jpg",
-        headline: "Lorem ipsum",
-        text: "lorem ipsum dolor sit amen valami de nem irja automatikusan es nekem kurvara nincsne kedvem ennel t0bbet beleirni"
-    },
-
-    {
-        name: "frbullfall",
-        photo: "/Französische-Bulldogge-im-Erbst-1x1.jpg",
-        headline: "Lorem ipsum",
-        text: "lorem ipsum dolor sit amen valami de nem irja automatikusan es nekem kurvara nincsne kedvem ennel t0bbet beleirni"
+//rendezes fuggveny
+function rendez(array) {
+    for (var j = 0; j < array.length - 1; j++) {
+        for (var i = 0; i < array.length - 1 - j; i++) {
+            if (array[i]['name'] > array[i + 1]['name']) {
+                var newelement = array[i];
+                array[i] = array[i + 1];
+                array[i + 1] = newelement;
+            }
+        }
     }
-];
+}
 
-// az adatok konvertalasa egy html stringge 
+
+
+// az adatok konvertalasa egy html stringgel 
+rendez(pitbullData);
 
 var kutyok = pitbullData.map(function(kutyo, index) {
     var addclass;
@@ -105,4 +99,4 @@ function valt() {
         }
     }
 }
-setInterval(function () { valt(); }, 3000);
+var hadi = setInterval(function () { valt(); }, 3000);

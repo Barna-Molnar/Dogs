@@ -1,0 +1,38 @@
+    /* search section (ex a-a section) */
+    
+    .articles {
+        background-color: #eee;
+    }
+    
+    .advertisement {
+        background-color: #fff;
+        border: greenyellow 1px solid;
+        padding: 10px;
+    }
+    
+    .dog-search {
+        padding: 10px;
+    }
+    
+    .dog-search>label {
+        display: grid;
+        text-align: center;
+    }
+    
+    .dog-search>select {
+        width: 75%;
+    }
+    
+    .top-filter-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 15px;
+    }
+    
+    .filter-column>label {
+        margin-bottom: 0;
+    }
+    
+    .filter-column {
+        display: grid;
+    }
