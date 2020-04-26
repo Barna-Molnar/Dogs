@@ -439,7 +439,7 @@ button>i {
 
 @media (max-width: 1199px) {
     .container-content {
-        margin: auto;
+        margin: 0 auto;
     }
 }
 
@@ -452,6 +452,7 @@ button>i {
         text-align: center;
         grid-gap: 5px;
     }
+    .hadi-carousel {}
 }
 
 @media (max-width: 600px) {

@@ -1,5 +1,12 @@
     /* search section (ex a-a section) */
     
+    .search-result {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 15px;
+        padding: 5px;
+    }
+    
     .articles {
         background-color: #eee;
     }

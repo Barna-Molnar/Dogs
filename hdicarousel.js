@@ -1,26 +1,29 @@
 // adatok letrehozasa 
 import { pitbullData } from "./pittBullData.js"
 
-
-//rendezes fuggveny
-function rendez(array) {
-    for (var j = 0; j < array.length - 1; j++) {
-        for (var i = 0; i < array.length - 1 - j; i++) {
-            if (array[i]['name'] > array[i + 1]['name']) {
-                var newelement = array[i];
-                array[i] = array[i + 1];
-                array[i + 1] = newelement;
-            }
-        }
+function compare(a, b) {
+    if (a['name'] < b['name']) {
+        return -1;
     }
+    if (a['name'] > b['name']) {
+        return 1;
+    }
+    // a must be equal to b
+    return 0;
 }
 
 
 
 // az adatok konvertalasa egy html stringgel 
-rendez(pitbullData);
+const copyPitbullData = pitbullData.map(function(item) { return item });
+console.log(copyPitbullData);
+copyPitbullData.sort(compare);
+console.log(copyPitbullData);
+var slicePitbull = copyPitbullData.slice(0, 5);
+console.log(slicePitbull);
 
-var kutyok = pitbullData.map(function(kutyo, index) {
+
+var kutyok = slicePitbull.map(function(kutyo, index) {
     var addclass;
     if (index == 0) {
         addclass = "visible"
