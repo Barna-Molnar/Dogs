@@ -24,6 +24,7 @@ html {
 }
 
 .main-header {
+    margin-bottom: 10px;
     margin-top: 20px;
     background-color: transparent;
     height: 70px;
@@ -311,7 +312,7 @@ button>i {
     color: indigo;
 }
 
-.article-image>img {
+.article-image>a>img {
     height: 200px;
     width: 250px;
 }
@@ -435,6 +436,17 @@ button>i {
     width: 10px;
     border-radius: 5px;
     background-color: blueviolet;
+}
+
+
+/* footer*/
+
+.footer {
+    background-color: #aaa;
+}
+
+.footer-text>p {
+    margin-bottom: 0;
 }
 
 @media (max-width: 1199px) {

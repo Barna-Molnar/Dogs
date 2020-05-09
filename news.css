@@ -1,0 +1,31 @@
+.news {
+    padding-top: 50px;
+}
+
+.news h1 {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.news h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.article-picture {
+    margin-left: 15px;
+    float: right;
+    width: 40%;
+}
+
+.article-picture>img {
+    width: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.article-grid {}

@@ -2,10 +2,13 @@
 import { pitbullData } from "./pittBullData.js"
 
 function compare(a, b) {
-    if (a['name'] < b['name']) {
+    var adate = new Date(a['date'])
+    var bdate = new Date(b['date'])
+
+    if (adate > bdate) {
         return -1;
     }
-    if (a['name'] > b['name']) {
+    if (adate < bdate) {
         return 1;
     }
     // a must be equal to b

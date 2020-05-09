@@ -130,3 +130,18 @@ while (i < dogData.length) {
     i++
 };
 console.log(whiledog);
+
+
+function confirmEnding(str, target) {
+    var barni = ""
+    for (var i = str.length - 1; i >= (str.length - target.length); i--) {
+        console.log(i)
+        var targetindex = i - (str.length - target.length)
+        if (target[targetindex] !== str[i]) {
+            return false
+        }
+    }
+    return true
+}
+
+console.log(confirmEnding("Connor", "n"));

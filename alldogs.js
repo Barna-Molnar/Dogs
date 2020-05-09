@@ -1,5 +1,7 @@
 import { pitbullData } from "./pittBullData.js";
 
+
+
 var kutyok = pitbullData.map(function(kutyo, index) {
 
     return `
