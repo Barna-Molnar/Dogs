@@ -1,14 +1,9 @@
 import { news } from "./newsdata.js"
 
-// /[^?id=][a-z]+-[a-z]+-.+/ig
 const regexSearch = /(?<=id=)[\w\d-]+/i
 var cim = location.search
-console.log(cim)
-
 var result = cim.match(regexSearch)
-console.log(result[0])
-
-var badId = "Nincsen a keresesnek megfelelo eredmenyt"
+var badId = "Nincsen a keresesnek megfelelo eredmeny"
 
 function selectNews() {
     for (var i = 0; i < news.length; i++) {
@@ -20,7 +15,6 @@ function selectNews() {
     }
 }
 const selectedNews = selectNews();
-
 var hadi = `<h1>
                 ${selectedNews.title}
             </h1>
@@ -31,5 +25,4 @@ var hadi = `<h1>
                 ${selectedNews.longtext}
             </div>
                 `
-
 document.getElementById("selected-news").innerHTML = hadi;

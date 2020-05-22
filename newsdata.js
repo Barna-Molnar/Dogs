@@ -16,8 +16,7 @@ export const news = [{
 
     <p>Please provide a story of one or more specific pets this grant helped.</p>
     <p>The person who sponsored this pet is the new forever home for Sammy. He traveled a long way to adopt him and he has been working with him to become acclimated and they are getting along greatly! From his Petfinder profile: “Sammy was brought to us
-        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`,
-        location: "Budapest"
+        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`
     },
     {
         id: "egyenlore-nincsen-2",
@@ -37,8 +36,7 @@ export const news = [{
 
     <p>Please provide a story of one or more specific pets this grant helped.</p>
     <p>The person who sponsored this pet is the new forever home for Sammy. He traveled a long way to adopt him and he has been working with him to become acclimated and they are getting along greatly! From his Petfinder profile: “Sammy was brought to us
-        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`,
-        location: "Budapest"
+        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`
     },
     {
         id: "egyenlore-nincsen-3",
@@ -58,8 +56,7 @@ export const news = [{
 
     <p>Please provide a story of one or more specific pets this grant helped.</p>
     <p>The person who sponsored this pet is the new forever home for Sammy. He traveled a long way to adopt him and he has been working with him to become acclimated and they are getting along greatly! From his Petfinder profile: “Sammy was brought to us
-        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`,
-        location: "Gyor"
+        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`
     },
     {
         id: "egyenlore-nincsen-4",
@@ -79,8 +76,7 @@ export const news = [{
 
     <p>Please provide a story of one or more specific pets this grant helped.</p>
     <p>The person who sponsored this pet is the new forever home for Sammy. He traveled a long way to adopt him and he has been working with him to become acclimated and they are getting along greatly! From his Petfinder profile: “Sammy was brought to us
-        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`,
-        location: "Tata"
+        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`
     },
     {
         id: "egyenlore-nincsen-5",
@@ -100,8 +96,7 @@ export const news = [{
 
     <p>Please provide a story of one or more specific pets this grant helped.</p>
     <p>The person who sponsored this pet is the new forever home for Sammy. He traveled a long way to adopt him and he has been working with him to become acclimated and they are getting along greatly! From his Petfinder profile: “Sammy was brought to us
-        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`,
-        location: "Zalaegerszeg"
+        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`
     },
     {
         id: "egyenlore-nincsen-6",
@@ -121,8 +116,7 @@ export const news = [{
 
     <p>Please provide a story of one or more specific pets this grant helped.</p>
     <p>The person who sponsored this pet is the new forever home for Sammy. He traveled a long way to adopt him and he has been working with him to become acclimated and they are getting along greatly! From his Petfinder profile: “Sammy was brought to us
-        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`,
-        location: "Budakeszi"
+        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`
     },
     {
         id: "egyenlore-nincsen-7",
@@ -142,8 +136,7 @@ export const news = [{
 
     <p>Please provide a story of one or more specific pets this grant helped.</p>
     <p>The person who sponsored this pet is the new forever home for Sammy. He traveled a long way to adopt him and he has been working with him to become acclimated and they are getting along greatly! From his Petfinder profile: “Sammy was brought to us
-        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`,
-        location: "Budakeszi"
+        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`
     },
     {
         id: "egyenlore-nincsen-8",
@@ -163,8 +156,7 @@ export const news = [{
 
     <p>Please provide a story of one or more specific pets this grant helped.</p>
     <p>The person who sponsored this pet is the new forever home for Sammy. He traveled a long way to adopt him and he has been working with him to become acclimated and they are getting along greatly! From his Petfinder profile: “Sammy was brought to us
-        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`,
-        location: "Budakeszi"
+        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`
     },
     {
         id: "egyenlore-nincsen-9",
@@ -184,8 +176,7 @@ export const news = [{
 
     <p>Please provide a story of one or more specific pets this grant helped.</p>
     <p>The person who sponsored this pet is the new forever home for Sammy. He traveled a long way to adopt him and he has been working with him to become acclimated and they are getting along greatly! From his Petfinder profile: “Sammy was brought to us
-        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`,
-        location: "Budakeszi"
+        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`
     },
     {
         id: "egyenlore-nincsen-10",
@@ -205,8 +196,7 @@ export const news = [{
 
     <p>Please provide a story of one or more specific pets this grant helped.</p>
     <p>The person who sponsored this pet is the new forever home for Sammy. He traveled a long way to adopt him and he has been working with him to become acclimated and they are getting along greatly! From his Petfinder profile: “Sammy was brought to us
-        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`,
-        location: "Gyor"
+        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`
     },
     {
         id: "egyenlore-nincsen-11",
@@ -226,8 +216,7 @@ export const news = [{
 
     <p>Please provide a story of one or more specific pets this grant helped.</p>
     <p>The person who sponsored this pet is the new forever home for Sammy. He traveled a long way to adopt him and he has been working with him to become acclimated and they are getting along greatly! From his Petfinder profile: “Sammy was brought to us
-        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`,
-        location: "Gyor"
+        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`
     },
     {
         id: "egyenlore-nincsen-12",
@@ -247,8 +236,7 @@ export const news = [{
 
     <p>Please provide a story of one or more specific pets this grant helped.</p>
     <p>The person who sponsored this pet is the new forever home for Sammy. He traveled a long way to adopt him and he has been working with him to become acclimated and they are getting along greatly! From his Petfinder profile: “Sammy was brought to us
-        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`,
-        location: "Gyor"
+        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`
     },
     {
         id: "egyenlore-nincsen-13",
@@ -268,8 +256,7 @@ export const news = [{
 
     <p>Please provide a story of one or more specific pets this grant helped.</p>
     <p>The person who sponsored this pet is the new forever home for Sammy. He traveled a long way to adopt him and he has been working with him to become acclimated and they are getting along greatly! From his Petfinder profile: “Sammy was brought to us
-        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`,
-        location: "Gyor"
+        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`
     },
     {
         id: "egyenlore-nincsen-14",
@@ -289,8 +276,7 @@ export const news = [{
 
     <p>Please provide a story of one or more specific pets this grant helped.</p>
     <p>The person who sponsored this pet is the new forever home for Sammy. He traveled a long way to adopt him and he has been working with him to become acclimated and they are getting along greatly! From his Petfinder profile: “Sammy was brought to us
-        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`,
-        location: "Budapest"
+        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`
     },
     {
         id: "egyenlore-nincsen-15",
@@ -310,8 +296,7 @@ export const news = [{
 
     <p>Please provide a story of one or more specific pets this grant helped.</p>
     <p>The person who sponsored this pet is the new forever home for Sammy. He traveled a long way to adopt him and he has been working with him to become acclimated and they are getting along greatly! From his Petfinder profile: “Sammy was brought to us
-        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`,
-        location: "Zalaegerszeg"
+        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`
     },
     {
         id: "egyenlore-nincsen-16",
@@ -331,8 +316,7 @@ export const news = [{
 
     <p>Please provide a story of one or more specific pets this grant helped.</p>
     <p>The person who sponsored this pet is the new forever home for Sammy. He traveled a long way to adopt him and he has been working with him to become acclimated and they are getting along greatly! From his Petfinder profile: “Sammy was brought to us
-        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`,
-        location: "Budapest"
+        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`
     },
     {
         id: "egyenlore-nincsen-17",
@@ -352,8 +336,7 @@ export const news = [{
 
     <p>Please provide a story of one or more specific pets this grant helped.</p>
     <p>The person who sponsored this pet is the new forever home for Sammy. He traveled a long way to adopt him and he has been working with him to become acclimated and they are getting along greatly! From his Petfinder profile: “Sammy was brought to us
-        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`,
-        location: "Zalaegerszeg"
+        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`
     },
     {
         id: "egyenlore-nincsen-18",
@@ -373,8 +356,7 @@ export const news = [{
 
     <p>Please provide a story of one or more specific pets this grant helped.</p>
     <p>The person who sponsored this pet is the new forever home for Sammy. He traveled a long way to adopt him and he has been working with him to become acclimated and they are getting along greatly! From his Petfinder profile: “Sammy was brought to us
-        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`,
-        location: "Zalaegerszeg"
+        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`
     },
     {
         id: "egyenlore-nincsen-19",
@@ -394,8 +376,7 @@ export const news = [{
 
     <p>Please provide a story of one or more specific pets this grant helped.</p>
     <p>The person who sponsored this pet is the new forever home for Sammy. He traveled a long way to adopt him and he has been working with him to become acclimated and they are getting along greatly! From his Petfinder profile: “Sammy was brought to us
-        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`,
-        location: "Zalaegerszeg"
+        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`
     },
     {
         id: "egyenlore-nincsen-20",
@@ -415,8 +396,7 @@ export const news = [{
 
     <p>Please provide a story of one or more specific pets this grant helped.</p>
     <p>The person who sponsored this pet is the new forever home for Sammy. He traveled a long way to adopt him and he has been working with him to become acclimated and they are getting along greatly! From his Petfinder profile: “Sammy was brought to us
-        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`,
-        location: "Budapest"
+        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`
     },
     {
         id: "egyenlore-nincsen-21",
@@ -436,8 +416,7 @@ export const news = [{
 
     <p>Please provide a story of one or more specific pets this grant helped.</p>
     <p>The person who sponsored this pet is the new forever home for Sammy. He traveled a long way to adopt him and he has been working with him to become acclimated and they are getting along greatly! From his Petfinder profile: “Sammy was brought to us
-        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`,
-        location: "Budapest"
+        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`
     },
     {
         id: "egyenlore-nincsen-22",
@@ -457,8 +436,7 @@ export const news = [{
 
     <p>Please provide a story of one or more specific pets this grant helped.</p>
     <p>The person who sponsored this pet is the new forever home for Sammy. He traveled a long way to adopt him and he has been working with him to become acclimated and they are getting along greatly! From his Petfinder profile: “Sammy was brought to us
-        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`,
-        location: "Budapest"
+        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`
     },
     {
         id: "egyenlore-nincsen-23",
@@ -478,8 +456,7 @@ export const news = [{
 
     <p>Please provide a story of one or more specific pets this grant helped.</p>
     <p>The person who sponsored this pet is the new forever home for Sammy. He traveled a long way to adopt him and he has been working with him to become acclimated and they are getting along greatly! From his Petfinder profile: “Sammy was brought to us
-        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`,
-        location: "Budapest"
+        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`
     },
     {
         id: "egyenlore-nincsen-24",
@@ -499,7 +476,6 @@ export const news = [{
 
     <p>Please provide a story of one or more specific pets this grant helped.</p>
     <p>The person who sponsored this pet is the new forever home for Sammy. He traveled a long way to adopt him and he has been working with him to become acclimated and they are getting along greatly! From his Petfinder profile: “Sammy was brought to us
-        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`,
-        location: "Budapest"
+        because his owner passed away. He was about 5 years old and is a neutered male. Sammy is leash trained and is good with children. He is good with other dogs and cats. Sammy has been kenneled and is used to a fenced in yard.”</p>`
     },
 ]

@@ -1,5 +1,11 @@
     /* search section (ex a-a section) */
     
+    body {
+        min-height: 100%;
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
+    
     .search-result {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -32,7 +38,7 @@
     
     .top-filter-form {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 15px;
     }
     

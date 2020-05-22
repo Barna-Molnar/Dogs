@@ -1,5 +1,5 @@
 // adatok letrehozasa 
-import { pitbullData } from "./pittBullData.js"
+import { dogData } from "./dogData.js"
 
 function compare(a, b) {
     var adate = new Date(a['date'])
@@ -18,7 +18,7 @@ function compare(a, b) {
 
 
 // az adatok konvertalasa egy html stringgel 
-const copyPitbullData = pitbullData.map(function(item) { return item });
+const copyPitbullData = dogData.map(function(item) { return item });
 console.log(copyPitbullData);
 copyPitbullData.sort(compare);
 console.log(copyPitbullData);
