@@ -66,7 +66,7 @@
          date: '2019-06-05',
          location: "Gyor",
          breed: "Labrador",
-         age: 0
+         age: 1
 
      },
      {

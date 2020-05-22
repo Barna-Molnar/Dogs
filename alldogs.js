@@ -55,37 +55,20 @@ var ageGroupValues = {
 
 // valami lesz majd belole de egyenlore semmi >D>D>D>D>D
 var ages = []
-var arrayProp = []
-for (const prop in ageGroupValues) {
-    arrayProp.push(prop)
-}
-console.log(arrayProp)
+var ageGroupKeys = Object.keys(ageGroupValues); // ["Puppy", "Young", "Adult", "Senior"]
+console.log(ageGroupKeys)
 for (var i = 0; i < dogData.length; i++) {
-
-    for (var j = 0; j < arrayProp.length; j++) {
-        var selectedAgeGroup = ageGroupValues[arrayProp[j]]
-
-        if (dogData[i]["age"] > selectedAgeGroup.min && dogData[i]["age"] <= selectedAgeGroup.max) {
-            console.log(ageGroupValues[arrayProp[j]])
-            console.log(arrayProp[j])
-            if (!ages.includes(arrayProp[j])) {
-                ages.push(arrayProp[j])
-            }
-        }
-
+    const ageGroup = ageGroupKeys.find(key => dogData[i]["age"] > ageGroupValues[key].min && dogData[i]["age"] <= ageGroupValues[key].max);
+    console.log(ageGroup)
+    if (!ages.includes(ageGroup || 'Unknown')) {
+        ages.push(ageGroup || 'Unknown')
     }
-
-    // if (valueOfAge) {
-    //     for (var j = 0; i < arrayProp.length; j++) {
-    //         if (valueOfAge > ageGroupValues[arrayProp[j]]["min"] && valueOfAge < ageGroupValues[arrayProp[j]]["max"]) {
-    //             if (!ages.includes(ageGroupValues[arrayProp[j]])) {
-    //                 ages.push(ageGroupValues[arrayProp[j]])
-    //             }
-    //         }
-    //     }
-    // }
-
 }
+
+// dogData.forEach(dog => {
+//     const ageGroup = Object.keys(ageGroupValues).find(key => dog.age > ageGroupValues[key].min && dog.age <= ageGroupValues[key].max);
+//     ages.includes(ageGroup || 'Unknown') || ages.push(ageGroup || 'Unknown');
+// });
 
 //////////////////////////////////////////
 //var ages = []
