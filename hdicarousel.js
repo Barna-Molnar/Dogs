@@ -105,4 +105,4 @@ function valt() {
         }
     }
 }
-var hadi = setInterval(function () { valt(); }, 3000);
+window.hadi = setInterval(function () { valt(); }, 3000);

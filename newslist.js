@@ -1,6 +1,6 @@
 import { news } from "./newsdata.js"
 
-var hirek = news.map(function(hir, index) {
+var hirek = news.map(function(hir) {
     return `
         <div class="article-dogs">
             <div class="article-image">

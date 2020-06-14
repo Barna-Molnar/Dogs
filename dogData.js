@@ -8,7 +8,8 @@
          date: '2010-01-05',
          location: "Budapest",
          breed: "Si-cu",
-         age: 1
+         age: 1,
+         gender: "female"
      },
 
      {
@@ -19,7 +20,8 @@
          date: '2000-02-05',
          location: "Budapest",
          breed: "French Bulldog",
-         age: 2
+         age: 2,
+         gender: "male"
      },
 
      {
@@ -30,7 +32,8 @@
          date: '2020-03-05',
          location: "Tata",
          breed: "American Bulldog",
-         age: 6
+         age: 6,
+         gender: "male"
 
      },
 
@@ -42,7 +45,8 @@
          date: '2010-04-05',
          location: "Tata",
          breed: "French Bulldog",
-         age: 5
+         age: 5,
+         gender: "male"
 
      },
 
@@ -54,7 +58,8 @@
          date: '2018-05-05',
          location: "Gyor",
          breed: "Pitbull",
-         age: 3
+         age: 3,
+         gender: "male"
 
 
      },
@@ -66,7 +71,8 @@
          date: '2019-06-05',
          location: "Gyor",
          breed: "Labrador",
-         age: 1
+         age: 1,
+         gender: "female"
 
      },
      {
@@ -77,7 +83,8 @@
          date: '2019-06-05',
          location: "Zalaegerszeg",
          breed: "Pitbull",
-         age: 1
+         age: 1,
+         gender: "male"
 
      },
      {
@@ -88,7 +95,8 @@
          date: '2010-07-05',
          location: "Zalaegerszeg",
          breed: "French Bulldog",
-         age: 2
+         age: 2,
+         gender: "female"
 
      },
      {
@@ -99,7 +107,8 @@
          date: '2012-07-05',
          location: "Zalaegerszeg",
          breed: "French Bulldog",
-         age: 8
+         age: 8,
+         gender: "male"
 
      }
 

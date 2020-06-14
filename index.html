@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <div id="iDontKnow"></div>
     <div class="wrapper">
         <div class="container-content">
             <header class="main-header">
@@ -94,23 +95,28 @@
                     <form action="" class="form-in-advertisement">
                         <div class="margin-form">
                             <label for="location">Location</label>
-                            <input type="text" name="" id="location" placeholder="Ex...Miami,LA">
+                            <select class="custom-select" name="location" id="locationFilter">
+                                
+                            </select>
                         </div>
                         <div class="margin-form">
-                            <label for="typen">Type</label>
-                            <select class="custom-select" id="typen" required>
-                            <option selected disabled value="">Choose...</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                            <label for="Age">Age</label>
+                            <select class="custom-select" name="Age" id="ageFilter">
+                                
                             </select>
                         </div>
                         <div class="breeds-div margin-form">
                             <label for="breeds">Breeds</label>
-                            <input type="text" name="" id="breeds">
+                            <select class="custom-select" name="breeds" id="breedFilter"></select>
+                        </div>
+                        <div class="margin-form">
+                            <label for="Gender">Gender</label>
+                            <select class="custom-select" name="Gender" id="genderFilter">
+                                
+                            </select>
                         </div>
                         <div>
-                            <button class="form-button">Find Pets</button>
+                            <button id="dogSearchButton" class="form-button">Find Pets</button>
                         </div>
                     </form>
                 </div>
@@ -163,6 +169,8 @@
 
     <script type="module" src="/dogData.js"></script>
     <script type="module" src="/newsdata.js"></script>
+    <script type="module" src="/renderfilter.js"></script>
+    <script type="module" src="/index.js"></script>
 
     <script type="module" src="/newslist.js"></script>
     <script type="module" src="/hdicarousel.js"></script>
