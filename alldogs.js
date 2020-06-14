@@ -133,12 +133,33 @@ export function handleFilterChange() {
 }
 
 function renderDogs(dogs) {
-    searchResult.innerHTML = dogs.map(function(dog) {
-        return ` <div class="card">
-  <img class="card-img-top" src="${dog.photo}" alt="Card image cap">
-  <div class="card-body">
-    <p class="card-text">${dog.name}</p>
-  </div>
-</div>`
-    }).join("")
+    searchResult.innerHTML = "";
+
+    var dogCards = dogs.map(dog => {
+        var cardDiv = document.createElement("div")
+        cardDiv.className = "card"
+        var imgCard = document.createElement("img")
+        imgCard.className = "card-img-top"
+        imgCard.src = dog.photo
+        imgCard.alt = "Card image cap"
+        cardDiv.appendChild(imgCard)
+        var cardBody = document.createElement("div")
+        cardBody.className = "card-body"
+        var pCard = document.createElement("p")
+        pCard.className = "card-text"
+        pCard.innerText = dog.name
+        cardBody.appendChild(pCard)
+        cardDiv.appendChild(cardBody)
+
+
+
+        return cardDiv
+    })
+    for (var i = 0; i < dogCards.length; i++) {
+        searchResult.appendChild(dogCards[i])
+
+    }
+
+
+
 }
