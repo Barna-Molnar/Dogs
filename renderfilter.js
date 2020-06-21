@@ -58,19 +58,37 @@ export var getBreedTemplates = function(selectedBreedFromUrl) {
         }
     }
     breeds.sort();
-    var breedTemplates = breeds.map(function(breed) {
+    var breedNodes = document.createDocumentFragment()
+
+    var breedNodeArray = breeds.map(function(breed) {
+        var option = document.createElement("option")
+        option.value = breed
+        option.innerText = breed
+
         if (breed == selectedBreedFromUrl) {
-            return `<option selected value="${breed}">${breed}</option>`
+            option.selected = true
+            return option
+
         } else {
-            return `<option value="${breed}">${breed}</option>`
+            return option
         }
 
-    }).join('')
+    })
+    var firstOption = document.createElement("option")
+    firstOption.value = ""
+    firstOption.innerText = "choose..."
     if (selectedBreedFromUrl == "") {
-        return `<option selected value="">choose..</option>${breedTemplates}`
-    } else {
-        return `<option value="">choose...</option>${breedTemplates}` //problem 
+
+        firstOption.selected = true
+
     }
+    breedNodes.appendChild(firstOption)
+
+    for (var i = 0; i < breedNodeArray.length; i++) {
+        breedNodes.appendChild(breedNodeArray[i])
+    }
+    return breedNodes
+
 }
 
 export var ageGroupValues = {

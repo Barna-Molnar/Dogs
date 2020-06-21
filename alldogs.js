@@ -45,8 +45,7 @@ locationFilter.addEventListener("change", handleFilterChange)
 var breedTemplates = getBreedTemplates(selectedBreedFromUrl)
 
 var breedFilter = document.getElementById("breedFilter")
-breedFilter.innerHTML = breedTemplates
-    //`<option value="" selected>choose..</option>${breedTemplates}`
+breedFilter.appendChild(breedTemplates)
 
 breedFilter.addEventListener("change", handleFilterChange)
 
