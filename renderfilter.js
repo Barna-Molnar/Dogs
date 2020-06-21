@@ -9,20 +9,46 @@ export var getLocationTemplates = function(selectedLocationFromUrl) {
         }
     }
     locations.sort();
-    var locationTemplates = locations.map(function(location) {
-        if (location == selectedLocationFromUrl) {
-            return `<option selected value="${location}">${location}</option>`
-        } else {
-            return `<option value="${location}">${location}</option>`
-        }
+    var locationNodes = document.createDocumentFragment()
 
-    }).join('')
+    var locationNodeArray = locations.map(function(location) {
+        var option = document.createElement("option")
+
+        if (location == selectedLocationFromUrl) {
+            option.selected = true
+            option.value = location
+            option.innerText = location
+            return option
+
+        } else {
+            option.value = location
+            option.innerText = location
+            return option
+        }
+    })
+
+    var firstOption = document.createElement("option")
+    firstOption.value = ""
+    firstOption.innerText = "choose..."
     if (selectedLocationFromUrl == "") {
-        return `<option selected value="">choose</option>${locationTemplates}`
-    } else {
-        return `<option value="">choose...</option>${locationTemplates}` // problem
+
+        firstOption.selected = true
+
     }
+    locationNodes.appendChild(firstOption)
+
+
+
+    for (var i = 0; i < locationNodeArray.length; i++) {
+        locationNodes.appendChild(locationNodeArray[i])
+    }
+
+    return locationNodes
+
 }
+
+
+
 
 export var getBreedTemplates = function(selectedBreedFromUrl) {
     var breeds = []

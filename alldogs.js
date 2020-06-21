@@ -33,7 +33,7 @@ console.log()
 
 // searching to ID  // converted/selceted data put in the dom 
 var locationFilter = document.getElementById("locationFilter")
-locationFilter.innerHTML = locationTemplates
+locationFilter.appendChild(locationTemplates)
 
 // locationfilter event figyeles,ha valtozas van call handleFilterChange function
 locationFilter.addEventListener("change", handleFilterChange)
@@ -157,9 +157,14 @@ function renderDogs(dogs) {
     })
     for (var i = 0; i < dogCards.length; i++) {
         searchResult.appendChild(dogCards[i])
-
     }
-
-
-
 }
+
+// searchResult.innerHTML = dogs.map(function(dog) {
+//     return ` <div class="card">
+// <img class="card-img-top" src="${dog.photo}" alt="Card image cap">
+// <div class="card-body">
+// <p class="card-text">${dog.name}</p>
+// </div>
+// </div>`
+// }).join("")
