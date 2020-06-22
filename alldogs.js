@@ -55,7 +55,7 @@ breedFilter.addEventListener("change", handleFilterChange)
 var ageTemplates = getAgeTemplates(selectedAgeFromUrl)
 
 var ageFilter = document.getElementById("ageFilter")
-ageFilter.innerHTML = ageTemplates
+ageFilter.appendChild(ageTemplates)
 
 //`<option value="" selected>choose..</option>${ageTemplates}`
 
@@ -65,7 +65,7 @@ ageFilter.addEventListener("change", handleFilterChange)
 
 var genderTemplates = getGenderTemplates(selectedGenderFromUrl)
 var genderFilter = document.getElementById("genderFilter")
-genderFilter.innerHTML = genderTemplates
+genderFilter.appendChild(genderTemplates)
 
 genderFilter.addEventListener("change", handleFilterChange)
 

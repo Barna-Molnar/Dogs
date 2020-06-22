@@ -128,19 +128,38 @@ export var getAgeTemplates = function(selectedAgeFromUrl) {
 
         return 0;
     });
-    var ageTemplates = ages.map(function(num) {
+    var ageNodes = document.createDocumentFragment()
+
+    var ageNodeArrey = ages.map(function(num) {
+
+        var option = document.createElement("option")
+        option.value = num
+        option.innerText = num
+
         if (num == selectedAgeFromUrl) {
-            return `<option selected value="${num}">${num}</option>`
+
+            option.selected = true
+            return option
+
         } else {
-            return `<option value="${num}">${num}</option>`
+            return option
         }
 
-    }).join('')
+    })
+
+    var firstOption = document.createElement("option")
+    firstOption.value = ""
+    firstOption.innerText = "choose..."
+
     if (selectedAgeFromUrl == "") {
-        return `<option value="" selected>choose...</option>${ageTemplates}`
-    } else {
-        return `<option value="">choose...</option>${ageTemplates}`
+        firstOption.selected = true
     }
+    ageNodes.appendChild(firstOption)
+
+    for (var i = 0; i < ageNodeArrey.length; i++) {
+        ageNodes.appendChild(ageNodeArrey[i])
+    }
+    return ageNodes
 }
 
 export var getGenderTemplates = function(selectedGenderFromUrl) {
@@ -151,19 +170,34 @@ export var getGenderTemplates = function(selectedGenderFromUrl) {
         }
     }
     genders.sort();
-    console.log(genders)
-    console.log(selectedGenderFromUrl)
-    var genderTemplates = genders.map(function(gender) {
-        console.log(gender)
+    var genderNodes = document.createDocumentFragment()
+
+    var genderNodeArray = genders.map(function(gender) {
+
+        var option = document.createElement("option")
+        option.value = gender
+        option.innerText = gender
+
         if (gender == selectedGenderFromUrl) {
-            return `<option selected value="${gender}">${gender}</option>`
+            option.selected = true
+            return option
+
         } else {
-            return `<option value="${gender}">${gender}</option>`
+            return option
         }
-    }).join('')
+    })
+    var firstOption = document.createElement("option")
+    firstOption.value = ""
+    firstOption.innerText = "choose..."
+
     if (selectedGenderFromUrl == "") {
-        return `<option selected value="">choose..</option>${genderTemplates}`
-    } else {
-        return `<option value="">choose..</option>${genderTemplates}`
+
+        firstOption.selected = true
     }
+    genderNodes.appendChild(firstOption)
+
+    for (var i = 0; i < genderNodeArray.length; i++) {
+        genderNodes.appendChild(genderNodeArray[i])
+    }
+    return genderNodes
 }
