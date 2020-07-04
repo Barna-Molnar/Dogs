@@ -2,21 +2,19 @@ import { getLocationTemplates, getBreedTemplates, getAgeTemplates, getGenderTemp
 
 var locationTemplates = getLocationTemplates()
 var locationFilter = document.getElementById("locationFilter")
-locationFilter.innerHTML = locationTemplates
-
-
+locationFilter.appendChild(locationTemplates)
 
 var breedTemplates = getBreedTemplates()
 var breedFilter = document.getElementById("breedFilter")
-breedFilter.innerHTML = breedTemplates
+breedFilter.appendChild(breedTemplates)
 
 var ageTemplates = getAgeTemplates()
 var ageFilter = document.getElementById("ageFilter")
-ageFilter.innerHTML = ageTemplates
+ageFilter.appendChild(ageTemplates)
 
 var genderTemplates = getGenderTemplates()
 var genderFilter = document.getElementById("genderFilter")
-genderFilter.innerHTML = genderTemplates
+genderFilter.appendChild(genderTemplates)
 
 
 document.getElementById("dogSearchButton").addEventListener("click", function(event) {

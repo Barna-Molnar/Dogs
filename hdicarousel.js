@@ -15,16 +15,10 @@ function compare(a, b) {
     return 0;
 }
 
-
-
 // az adatok konvertalasa egy html stringgel 
 const copyPitbullData = dogData.map(function(item) { return item });
-console.log(copyPitbullData);
 copyPitbullData.sort(compare);
-console.log(copyPitbullData);
 var slicePitbull = copyPitbullData.slice(0, 5);
-console.log(slicePitbull);
-
 
 var kutyok = slicePitbull.map(function(kutyo, index) {
     var addclass;
@@ -35,55 +29,84 @@ var kutyok = slicePitbull.map(function(kutyo, index) {
     } else {
         addclass = ''
     }
-    return `<div class="hadi-item  ${addclass}">  
-    <div class="carousel-container">
-        <div>
-            <img src="${kutyo.photo}">
-        </div>
-        <div class="slide-content">
-            <h3>${kutyo.headline}</h3>
-            <p>${kutyo.text}</p>
-            <button class="slide-button">i want to <i class="fas fa-angle-right"></i></button>
-        </div>
-    </div>
-    </div>`
-}).join(''); // atkonvertalja  a benne levo tombot egz db stringe ugy h osszefuzi oket egz db ures stringgel!
+
+    var kutyi = document.createElement("div")
+    kutyi.className = `hadi-item  ${addclass}`
+    var carouselCont = document.createElement("div")
+    carouselCont.className = "carousel-container";
+    var div = document.createElement("div")
+    var picture = document.createElement("img")
+    picture.src = kutyo.photo
+    div.appendChild(picture)
+    carouselCont.appendChild(div)
+    kutyi.appendChild(carouselCont)
+    var slideDiv = document.createElement("div")
+    slideDiv.className = "slide-content"
+    carouselCont.appendChild(slideDiv)
+    var headline = document.createElement("h3")
+    headline.innerText = kutyo.headline
+    slideDiv.appendChild(headline)
+    var para = document.createElement("p")
+    para.innerText = kutyo.text
+    slideDiv.appendChild(para)
+    var button = document.createElement("button")
+    button.className = "slide-button"
+    button.innerText = "i want to "
+    var i = document.createElement("i")
+    i.className = "fas fa-angle-right"
+    button.appendChild(i)
+    slideDiv.appendChild(button)
+
+    return kutyi;
+
+    // return `<div class="hadi-item  ${addclass}">  
+    //             <div class="carousel-container">
+    //                 <div>
+    //                     <img src="${kutyo.photo}">
+    //                 </div>
+    //                 <div class="slide-content">
+    //                     <h3>${kutyo.headline}</h3>
+    //                     <p>${kutyo.text}</p>
+    //                     <button class="slide-button">i want to <i class="fas fa-angle-right"></i></button>
+    //                 </div>
+    //             </div>
+    //         </div>`
+}); // atkonvertalja  a benne levo tombot egy db stringe ugy h osszefuzi oket egy db ures stringgel!
 
 
 // kereses class alapjan  // az atkonvertalt adatok behelyezese a domba
 
 var hadiCarousel = document.querySelector('.hadi-carousel');
-hadiCarousel.innerHTML = kutyok;
-
-
+for (var i = 0; i < kutyok.length; i++) {
+    hadiCarousel.appendChild(kutyok[i])
+}
 
 // belehelyezzuk az indicators  a domba 
 
 const items = [...document.querySelectorAll('.hadi-item')]
-const indicators = `<div class="hadi-indicators">
-
-                            ${items.map(function (item) {
+const itemDivs = items.map(function(item) {
     var check = item.className;
     var yesornot = check.includes('visible')
     var visible = (yesornot == true) ? "visible" : "";
 
-    return `<div class="spot ${visible}"></div>`;
-}).join('')}
-                    </div>`
-    ;
+    var div = document.createElement("div")
+    div.className = `spot ${visible}`
 
+    return div
+})
+var indicators = document.createElement("div")
+indicators.className = "hadi-indicators"
+itemDivs.forEach(div => indicators.appendChild(div))
 
-hadiCarousel.innerHTML = `${hadiCarousel.innerHTML}${indicators}`
-
+hadiCarousel.appendChild(indicators)
 
 // a carousel elinditasa automatikus valtogatassal
 const spots = document.querySelectorAll(".spot");
 
-
-
 const itemsnew = [...document.querySelectorAll('.hadi-item')];
+
 function valt() {
-    var i = itemsnew.findIndex(function (item) {
+    var i = itemsnew.findIndex(function(item) {
         return item.className.includes('visible')
     });
     console.log(i);
@@ -105,4 +128,4 @@ function valt() {
         }
     }
 }
-window.hadi = setInterval(function () { valt(); }, 3000);
+window.hadi = setInterval(function() { valt(); }, 3000);
