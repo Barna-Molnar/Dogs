@@ -1,5 +1,6 @@
 import { dogData } from "./dogData.js";
 import { getLocationTemplates, getBreedTemplates, getAgeTemplates, getGenderTemplates, ageGroupValues } from './renderfilter.js';
+import { elementMaker } from './elementMaker.js';
 
 // regex for location + get location from url + assign to variable
 const regexLocation = /(?<=location=)[\w\d-%]+/i
@@ -38,26 +39,18 @@ locationFilter.appendChild(locationTemplates)
 // locationfilter event figyeles,ha valtozas van call handleFilterChange function
 locationFilter.addEventListener("change", handleFilterChange)
 
-
-
 // Breed filter creating with for loop
 
 var breedTemplates = getBreedTemplates(selectedBreedFromUrl)
-
 var breedFilter = document.getElementById("breedFilter")
 breedFilter.appendChild(breedTemplates)
 
 breedFilter.addEventListener("change", handleFilterChange)
 
-
-
 // valami lesz majd belole de egyenlore semmi >D>D>D>D>D
 var ageTemplates = getAgeTemplates(selectedAgeFromUrl)
-
 var ageFilter = document.getElementById("ageFilter")
 ageFilter.appendChild(ageTemplates)
-
-//`<option value="" selected>choose..</option>${ageTemplates}`
 
 ageFilter.addEventListener("change", handleFilterChange)
 
@@ -68,8 +61,6 @@ var genderFilter = document.getElementById("genderFilter")
 genderFilter.appendChild(genderTemplates)
 
 genderFilter.addEventListener("change", handleFilterChange)
-
-
 
 handleFilterChange(dogData);
 
@@ -114,7 +105,6 @@ export function handleFilterChange() {
 
     var dogDataForAge = []
     if (selectedAge == "") {
-
         dogDataForAge = dogdataForGender
     } else {
 
@@ -127,7 +117,6 @@ export function handleFilterChange() {
             }
         }
     }
-
     renderDogs(dogDataForAge);
 }
 
@@ -135,21 +124,10 @@ function renderDogs(dogs) {
     searchResult.innerHTML = "";
 
     var dogCards = dogs.map(dog => {
-        var cardDiv = document.createElement("div")
-        cardDiv.className = "card"
-        var imgCard = document.createElement("img")
-        imgCard.className = "card-img-top"
-        imgCard.src = dog.photo
-        imgCard.alt = "Card image cap"
-        cardDiv.appendChild(imgCard)
-        var cardBody = document.createElement("div")
-        cardBody.className = "card-body"
-        var pCard = document.createElement("p")
-        pCard.className = "card-text"
-        pCard.innerText = dog.name
-        cardBody.appendChild(pCard)
-        cardDiv.appendChild(cardBody)
-
+        var imgCard = elementMaker("img", { className: "card-img-top", src: dog.photo, alt: "Card image cap" })
+        var pCard = elementMaker("p", { className: "card-text", innerText: dog.name })
+        var cardBody = elementMaker("div", { className: "card-body" }, [pCard])
+        var cardDiv = elementMaker("div", { className: "card" }, [imgCard, cardBody])
 
 
         return cardDiv
@@ -158,12 +136,3 @@ function renderDogs(dogs) {
         searchResult.appendChild(dogCards[i])
     }
 }
-
-// searchResult.innerHTML = dogs.map(function(dog) {
-//     return ` <div class="card">
-// <img class="card-img-top" src="${dog.photo}" alt="Card image cap">
-// <div class="card-body">
-// <p class="card-text">${dog.name}</p>
-// </div>
-// </div>`
-// }).join("")

@@ -1,6 +1,5 @@
 import { dogData } from "./dogData.js";
 
-
 export var getLocationTemplates = function(selectedLocationFromUrl) {
     var locations = []
     for (var i = 0; i < dogData.length; i++) {
@@ -37,18 +36,12 @@ export var getLocationTemplates = function(selectedLocationFromUrl) {
     }
     locationNodes.appendChild(firstOption)
 
-
-
     for (var i = 0; i < locationNodeArray.length; i++) {
         locationNodes.appendChild(locationNodeArray[i])
     }
-
     return locationNodes
 
 }
-
-
-
 
 export var getBreedTemplates = function(selectedBreedFromUrl) {
     var breeds = []
@@ -104,8 +97,6 @@ const ageGroupPriority = {
     Senior: 4
 };
 
-
-
 export var getAgeTemplates = function(selectedAgeFromUrl) {
     var ages = []
     var ageGroupKeys = Object.keys(ageGroupValues); // ["Puppy", "Young", "Adult", "Senior"]
@@ -144,7 +135,6 @@ export var getAgeTemplates = function(selectedAgeFromUrl) {
         } else {
             return option
         }
-
     })
 
     var firstOption = document.createElement("option")

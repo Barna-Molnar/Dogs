@@ -1,4 +1,5 @@
 import { news } from "./newsdata.js"
+import { elementMaker } from "./elementMaker.js"
 
 const regexSearch = /(?<=id=)[\w\d-]+/i
 var cim = location.search
@@ -15,14 +16,16 @@ function selectNews() {
     }
 }
 const selectedNews = selectNews();
-var hadi = `<h1>
-                ${selectedNews.title}
-            </h1>
-            <div class="article-grid">
-                <div class="article-picture">
-                    <img src="${selectedNews.photo}" alt="${selectedNews.title}">
-                </div>
-                ${selectedNews.longtext}
-            </div>
-                `
-document.getElementById("selected-news").innerHTML = hadi;
+
+var hir = document.createDocumentFragment()
+var title = elementMaker("h1", { innerText: selectedNews.title }, [])
+hir.appendChild(title)
+
+var picture = elementMaker("img", { src: selectedNews.photo, alt: selectedNews.title }, [])
+var pictureWrapper = elementMaker("div", { className: "article-picture" }, [picture])
+var spam = elementMaker("span", { innerHTML: selectedNews.longtext }, [])
+var wrapper = elementMaker("div", { className: "article-grid" }, [pictureWrapper, spam])
+hir.appendChild(wrapper)
+
+
+document.getElementById("selected-news").appendChild(hir);
