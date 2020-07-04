@@ -310,6 +310,10 @@ button>i {
     grid-gap: 20px;
 }
 
+div>a>h3 {
+    color: purple
+}
+
 .article-cim {
     margin: 20px;
 }
