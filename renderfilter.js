@@ -1,4 +1,5 @@
 import { dogData } from "./dogData.js";
+import { elementMaker } from "./elementMaker.js";
 
 export var getLocationTemplates = function(selectedLocationFromUrl) {
     var locations = []
@@ -11,24 +12,22 @@ export var getLocationTemplates = function(selectedLocationFromUrl) {
     var locationNodes = document.createDocumentFragment()
 
     var locationNodeArray = locations.map(function(location) {
-        var option = document.createElement("option")
+        var option = elementMaker("option", { value: location, innerText: location })
 
         if (location == selectedLocationFromUrl) {
+
             option.selected = true
-            option.value = location
-            option.innerText = location
+
             return option
 
         } else {
-            option.value = location
-            option.innerText = location
+
             return option
         }
     })
 
-    var firstOption = document.createElement("option")
-    firstOption.value = ""
-    firstOption.innerText = "choose..."
+    var firstOption = elementMaker("option", { value: "", innerText: "choose..." }, [])
+
     if (selectedLocationFromUrl == "") {
 
         firstOption.selected = true
@@ -54,9 +53,8 @@ export var getBreedTemplates = function(selectedBreedFromUrl) {
     var breedNodes = document.createDocumentFragment()
 
     var breedNodeArray = breeds.map(function(breed) {
-        var option = document.createElement("option")
-        option.value = breed
-        option.innerText = breed
+
+        var option = elementMaker("option", { value: breed, innerText: breed }, [])
 
         if (breed == selectedBreedFromUrl) {
             option.selected = true
@@ -67,9 +65,8 @@ export var getBreedTemplates = function(selectedBreedFromUrl) {
         }
 
     })
-    var firstOption = document.createElement("option")
-    firstOption.value = ""
-    firstOption.innerText = "choose..."
+    var firstOption = elementMaker("option", { value: "", innerText: "choose..." }, [])
+
     if (selectedBreedFromUrl == "") {
 
         firstOption.selected = true
@@ -123,9 +120,7 @@ export var getAgeTemplates = function(selectedAgeFromUrl) {
 
     var ageNodeArrey = ages.map(function(num) {
 
-        var option = document.createElement("option")
-        option.value = num
-        option.innerText = num
+        var option = elementMaker("option", { value: num, innerText: num }, [])
 
         if (num == selectedAgeFromUrl) {
 
@@ -137,9 +132,7 @@ export var getAgeTemplates = function(selectedAgeFromUrl) {
         }
     })
 
-    var firstOption = document.createElement("option")
-    firstOption.value = ""
-    firstOption.innerText = "choose..."
+    var firstOption = elementMaker("option", { value: "", innerText: "choose..." }, [])
 
     if (selectedAgeFromUrl == "") {
         firstOption.selected = true
@@ -164,10 +157,7 @@ export var getGenderTemplates = function(selectedGenderFromUrl) {
 
     var genderNodeArray = genders.map(function(gender) {
 
-        var option = document.createElement("option")
-        option.value = gender
-        option.innerText = gender
-
+        var option = elementMaker("option", { value: gender, innerText: gender }, [])
         if (gender == selectedGenderFromUrl) {
             option.selected = true
             return option
@@ -176,9 +166,7 @@ export var getGenderTemplates = function(selectedGenderFromUrl) {
             return option
         }
     })
-    var firstOption = document.createElement("option")
-    firstOption.value = ""
-    firstOption.innerText = "choose..."
+    var firstOption = elementMaker("option", { value: "", innerText: "choose..." }, [])
 
     if (selectedGenderFromUrl == "") {
 

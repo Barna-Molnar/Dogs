@@ -1,5 +1,6 @@
 // adatok letrehozasa 
 import { dogData } from "./dogData.js"
+import { elementMaker } from "./elementMaker.js";
 
 function compare(a, b) {
     var adate = new Date(a['date'])
@@ -30,47 +31,27 @@ var kutyok = slicePitbull.map(function(kutyo, index) {
         addclass = ''
     }
 
-    var kutyi = document.createElement("div")
-    kutyi.className = `hadi-item  ${addclass}`
-    var carouselCont = document.createElement("div")
-    carouselCont.className = "carousel-container";
-    var div = document.createElement("div")
-    var picture = document.createElement("img")
-    picture.src = kutyo.photo
-    div.appendChild(picture)
-    carouselCont.appendChild(div)
-    kutyi.appendChild(carouselCont)
-    var slideDiv = document.createElement("div")
-    slideDiv.className = "slide-content"
-    carouselCont.appendChild(slideDiv)
-    var headline = document.createElement("h3")
-    headline.innerText = kutyo.headline
-    slideDiv.appendChild(headline)
-    var para = document.createElement("p")
-    para.innerText = kutyo.text
-    slideDiv.appendChild(para)
-    var button = document.createElement("button")
-    button.className = "slide-button"
-    button.innerText = "i want to "
-    var i = document.createElement("i")
-    i.className = "fas fa-angle-right"
-    button.appendChild(i)
-    slideDiv.appendChild(button)
+    var picture = elementMaker("img", { src: kutyo.photo }, [])
+
+    var div = elementMaker("div", {}, [picture])
+
+    var para = elementMaker("p", { innerText: kutyo.text }, [])
+
+    var headline = elementMaker("h3", { innerText: kutyo.headline }, [])
+
+    var i = elementMaker("i", { className: "fas fa-angle-right" }, [])
+
+    var button = elementMaker("button", { className: "slide-button", innerText: "i want to " }, [i])
+
+    var slideDiv = elementMaker("div", { className: "slide-content" }, [headline, para, button])
+
+    var carouselCont = elementMaker("div", { className: "carousel-container" }, [div, slideDiv, ])
+
+    var kutyi = elementMaker("div", { className: `hadi-item  ${addclass}` }, [carouselCont])
 
     return kutyi;
 
-    // return `<div class="hadi-item  ${addclass}">  
-    //             <div class="carousel-container">
-    //                 <div>
-    //                     <img src="${kutyo.photo}">
-    //                 </div>
-    //                 <div class="slide-content">
-    //                     <h3>${kutyo.headline}</h3>
-    //                     <p>${kutyo.text}</p>
-    //                     <button class="slide-button">i want to <i class="fas fa-angle-right"></i></button>
-    //                 </div>
-    //             </div>
-    //         </div>`
+
 }); // atkonvertalja  a benne levo tombot egy db stringe ugy h osszefuzi oket egy db ures stringgel!
 
 
@@ -89,13 +70,12 @@ const itemDivs = items.map(function(item) {
     var yesornot = check.includes('visible')
     var visible = (yesornot == true) ? "visible" : "";
 
-    var div = document.createElement("div")
-    div.className = `spot ${visible}`
+    var div = elementMaker("div", { className: `spot ${visible}` })
 
     return div
 })
-var indicators = document.createElement("div")
-indicators.className = "hadi-indicators"
+var indicators = elementMaker("div", { className: "hadi-indicators" })
+
 itemDivs.forEach(div => indicators.appendChild(div))
 
 hadiCarousel.appendChild(indicators)
@@ -109,7 +89,7 @@ function valt() {
     var i = itemsnew.findIndex(function(item) {
         return item.className.includes('visible')
     });
-    console.log(i);
+
     itemsnew[i].classList.remove("visible");
     spots[i].classList.remove("visible");
     if (i == itemsnew.length - 1) {

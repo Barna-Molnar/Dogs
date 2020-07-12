@@ -24,6 +24,7 @@ hir.appendChild(title)
 var picture = elementMaker("img", { src: selectedNews.photo, alt: selectedNews.title }, [])
 var pictureWrapper = elementMaker("div", { className: "article-picture" }, [picture])
 var spam = elementMaker("span", { innerHTML: selectedNews.longtext }, [])
+
 var wrapper = elementMaker("div", { className: "article-grid" }, [pictureWrapper, spam])
 hir.appendChild(wrapper)
 
