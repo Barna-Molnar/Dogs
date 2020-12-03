@@ -1,5 +1,4 @@
 import { news } from "./newsdata.js"
-import { dogData } from "./dogData.js";
 import { elementMaker } from "./elementMaker.js";
 
 var hirek = news.map(function(hir) {

@@ -1,4 +1,3 @@
-import { dogData } from "./dogData.js";
 import { getLocationTemplates, getBreedTemplates, getAgeTemplates, getGenderTemplates, ageGroupValues } from './renderfilter.js';
 import { elementMaker } from './elementMaker.js';
 
@@ -62,69 +61,87 @@ genderFilter.appendChild(genderTemplates)
 
 genderFilter.addEventListener("change", handleFilterChange)
 
-handleFilterChange(dogData);
-
 export function handleFilterChange() {
-    var selectedLocation = locationFilter.value
+    fetch("http://localhost:1337/dogs").then(function(data) {
+        return data.json()
+    }).then(function(dogData) {
+        var selectedLocation = locationFilter.value
 
-    var dogDataForLocation = []
-    if (selectedLocation == "") {
-        dogDataForLocation = dogData
-    } else {
-        for (var i = 0; i < dogData.length; i++) {
-            if (dogData[i]["location"] == selectedLocation) {
-                dogDataForLocation.push(dogData[i])
+        var dogDataForLocation = []
+        if (selectedLocation == "") {
+            dogDataForLocation = dogData
+        } else {
+            for (var i = 0; i < dogData.length; i++) {
+                if (dogData[i]["location"] == selectedLocation) {
+                    dogDataForLocation.push(dogData[i])
+                }
             }
         }
-    }
-    var selectedBreed = breedFilter.value
-    var dogDataForBreed = []
+        var selectedBreed = breedFilter.value
+        var dogDataForBreed = []
 
-    if (selectedBreed == "") {
-        dogDataForBreed = dogDataForLocation
-    } else {
-        for (var i = 0; i < dogDataForLocation.length; i++) {
-            if (dogDataForLocation[i]["breed"] == selectedBreed) {
-                dogDataForBreed.push(dogDataForLocation[i])
+        if (selectedBreed == "") {
+            dogDataForBreed = dogDataForLocation
+        } else {
+            for (var i = 0; i < dogDataForLocation.length; i++) {
+                if (dogDataForLocation[i]["breed"] == selectedBreed) {
+                    dogDataForBreed.push(dogDataForLocation[i])
+                }
             }
         }
-    }
-    var selectedGender = genderFilter.value
-    var dogdataForGender = []
-    if (selectedGender == "") {
-        dogdataForGender = dogDataForBreed
-    } else {
-        for (var i = 0; i < dogDataForBreed.length; i++) {
-            if (dogDataForBreed[i]["gender"] == selectedGender) {
-                dogdataForGender.push(dogDataForBreed[i])
+        var selectedGender = genderFilter.value
+        var dogdataForGender = []
+        if (selectedGender == "") {
+            dogdataForGender = dogDataForBreed
+        } else {
+            for (var i = 0; i < dogDataForBreed.length; i++) {
+                if (dogDataForBreed[i]["gender"] == selectedGender) {
+                    dogdataForGender.push(dogDataForBreed[i])
+                }
             }
         }
-    }
 
-    var selectedAge = ageFilter.value
+        var selectedAge = ageFilter.value
 
-    var dogDataForAge = []
-    if (selectedAge == "") {
-        dogDataForAge = dogdataForGender
-    } else {
+        var dogDataForAge = []
+        if (selectedAge == "") {
+            dogDataForAge = dogdataForGender
+        } else {
 
-        var selectedAgeValues = ageGroupValues[selectedAge];
+            var selectedAgeValues = ageGroupValues[selectedAge];
 
-        for (var i = 0; i < dogdataForGender.length; i++) {
+            for (var i = 0; i < dogdataForGender.length; i++) {
 
-            if (dogdataForGender[i]["age"] > selectedAgeValues.min && dogdataForGender[i]["age"] <= selectedAgeValues.max) {
-                dogDataForAge.push(dogdataForGender[i])
+                if (dogdataForGender[i]["age"] > selectedAgeValues.min && dogdataForGender[i]["age"] <= selectedAgeValues.max) {
+                    dogDataForAge.push(dogdataForGender[i])
+                }
             }
         }
-    }
-    renderDogs(dogDataForAge);
+        renderDogs(dogDataForAge);
+    })
+
 }
+
+
+
+fetch("http://localhost:1337/dogs").then(function(data) {
+    return data.json()
+}).then(function(dogData) {
+
+
+    handleFilterChange(dogData);
+
+
+
+
+
+})
 
 function renderDogs(dogs) {
     searchResult.innerHTML = "";
 
     var dogCards = dogs.map(dog => {
-        var imgCard = elementMaker("img", { className: "card-img-top", src: dog.photo, alt: "Card image cap" })
+        var imgCard = elementMaker("img", { className: "card-img-top", src: "http://localhost:1337" + dog.photo.url, alt: "Card image cap" })
         var pCard = elementMaker("p", { className: "card-text", innerText: dog.name })
         var cardBody = elementMaker("div", { className: "card-body" }, [pCard])
         var cardDiv = elementMaker("div", { className: "card" }, [imgCard, cardBody])
