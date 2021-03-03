@@ -8,7 +8,7 @@ html {
     position: relative;
     height: 100%;
     width: 100%;
-    background-image: url('/hatter.jpg');
+    background-image: url("/hatter.jpg");
     margin: 0;
 }
 
@@ -189,7 +189,6 @@ body {
 
 .sub-menu-aboutIt>li:first-child {
     border-left: orange solid 0.5px;
-    ;
 }
 
 .sub-menu-aboutIt>li:hover {
@@ -298,6 +297,7 @@ button>i {
     grid-template-columns: 1fr 33%;
     border: solid 0.5px #eee;
     background-color: #fff;
+    margin-bottom: 20px;
 }
 
 .article-dogs {
@@ -311,7 +311,7 @@ button>i {
 }
 
 div>a>h3 {
-    color: purple
+    color: purple;
 }
 
 .article-cim {
@@ -389,7 +389,7 @@ input {
 
 .fb-button {
     font-size: 12px;
-    padding: 3px 4px
+    padding: 3px 4px;
 }
 
 button>i {
@@ -453,6 +453,9 @@ button>i {
 
 .footer {
     background-color: #aaa;
+    height: 40px;
+    display: grid;
+    align-items: center;
 }
 
 .footer-text>p {
