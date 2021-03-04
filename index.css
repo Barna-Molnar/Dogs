@@ -8,7 +8,7 @@ html {
     position: relative;
     height: 100%;
     width: 100%;
-    background-image: url("/hatter.jpg");
+    background-image: url("https://barna-molnar.github.io/Dogs/hatter.jpg");
     margin: 0;
 }
 
