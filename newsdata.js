@@ -1,7 +1,7 @@
 export const news = [{
         id: "egyenlore-nincsen-1",
         title: "egyelore nincsen",
-        photo: "/article1.png",
+        photo: "https://barna-molnar.github.io/Dogs/article1.png",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sunt quis, odit mollitia maxime hic adipisci culpa et error optio.",
         button: "Read more...",
         longtext: `<h2>What was the money or product used for?</h2>
@@ -41,7 +41,7 @@ export const news = [{
     {
         id: "egyenlore-nincsen-3",
         title: "egyelore nincsen",
-        photo: "/article3.jpg",
+        photo: "https://barna-molnar.github.io/Dogs/article3.jpg",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sunt quis, odit mollitia maxime hic adipisci culpa et error optio.",
         button: "Read more...",
         longtext: `<h2>What was the money or product used for?</h2>
@@ -61,7 +61,7 @@ export const news = [{
     {
         id: "egyenlore-nincsen-4",
         title: "egyelore nincsen",
-        photo: "/article2.jpeg",
+        photo: "https://barna-molnar.github.io/Dogs/article2.jpeg",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sunt quis, odit mollitia maxime hic adipisci culpa et error optio.",
         button: "Read more...",
         longtext: `<h2>What was the money or product used for?</h2>
@@ -81,7 +81,7 @@ export const news = [{
     {
         id: "egyenlore-nincsen-5",
         title: "egyelore nincsen",
-        photo: "/article1.png",
+        photo: "https://barna-molnar.github.io/Dogs/article1.png",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sunt quis, odit mollitia maxime hic adipisci culpa et error optio.",
         button: "Read more...",
         longtext: `<h2>What was the money or product used for?</h2>
@@ -101,7 +101,7 @@ export const news = [{
     {
         id: "egyenlore-nincsen-6",
         title: "egyelore nincsen",
-        photo: "/article2.jpeg",
+        photo: "https://barna-molnar.github.io/Dogs/article2.jpeg",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sunt quis, odit mollitia maxime hic adipisci culpa et error optio.",
         button: "Read more...",
         longtext: `<h2>What was the money or product used for?</h2>
@@ -121,7 +121,7 @@ export const news = [{
     {
         id: "egyenlore-nincsen-7",
         title: "egyelore nincsen",
-        photo: "/article3.jpg",
+        photo: "https://barna-molnar.github.io/Dogs/article3.jpg",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sunt quis, odit mollitia maxime hic adipisci culpa et error optio.",
         button: "Read more...",
         longtext: `<h2>What was the money or product used for?</h2>
@@ -141,7 +141,7 @@ export const news = [{
     {
         id: "egyenlore-nincsen-8",
         title: "egyelore nincsen",
-        photo: "/article2.jpeg",
+        photo: "https://barna-molnar.github.io/Dogs/article2.jpeg",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sunt quis, odit mollitia maxime hic adipisci culpa et error optio.",
         button: "Read more...",
         longtext: `<h2>What was the money or product used for?</h2>
@@ -161,7 +161,7 @@ export const news = [{
     {
         id: "egyenlore-nincsen-9",
         title: "egyelore nincsen",
-        photo: "/article1.png",
+        photo: "https://barna-molnar.github.io/Dogs/article1.png",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sunt quis, odit mollitia maxime hic adipisci culpa et error optio.",
         button: "Read more...",
         longtext: `<h2>What was the money or product used for?</h2>
@@ -181,7 +181,7 @@ export const news = [{
     {
         id: "egyenlore-nincsen-10",
         title: "egyelore nincsen",
-        photo: "/article2.jpeg",
+        photo: "https://barna-molnar.github.io/Dogs/article2.jpeg",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sunt quis, odit mollitia maxime hic adipisci culpa et error optio.",
         button: "Read more...",
         longtext: `<h2>What was the money or product used for?</h2>
@@ -201,7 +201,7 @@ export const news = [{
     {
         id: "egyenlore-nincsen-11",
         title: "egyelore nincsen",
-        photo: "/article3.jpg",
+        photo: "https://barna-molnar.github.io/Dogs/article3.jpg",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sunt quis, odit mollitia maxime hic adipisci culpa et error optio.",
         button: "Read more...",
         longtext: `<h2>What was the money or product used for?</h2>
@@ -221,7 +221,7 @@ export const news = [{
     {
         id: "egyenlore-nincsen-12",
         title: "egyelore nincsen",
-        photo: "/article2.jpeg",
+        photo: "https://barna-molnar.github.io/Dogs/article2.jpeg",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sunt quis, odit mollitia maxime hic adipisci culpa et error optio.",
         button: "Read more...",
         longtext: `<h2>What was the money or product used for?</h2>
@@ -241,7 +241,7 @@ export const news = [{
     {
         id: "egyenlore-nincsen-13",
         title: "egyelore nincsen",
-        photo: "/article1.png",
+        photo: "https://barna-molnar.github.io/Dogs/article1.png",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sunt quis, odit mollitia maxime hic adipisci culpa et error optio.",
         button: "Read more...",
         longtext: `<h2>What was the money or product used for?</h2>
@@ -261,7 +261,7 @@ export const news = [{
     {
         id: "egyenlore-nincsen-14",
         title: "egyelore nincsen",
-        photo: "/article2.jpeg",
+        photo: "https://barna-molnar.github.io/Dogs/article2.jpeg",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sunt quis, odit mollitia maxime hic adipisci culpa et error optio.",
         button: "Read more...",
         longtext: `<h2>What was the money or product used for?</h2>
@@ -281,7 +281,7 @@ export const news = [{
     {
         id: "egyenlore-nincsen-15",
         title: "egyelore nincsen",
-        photo: "/article3.jpg",
+        photo: "https://barna-molnar.github.io/Dogs/article3.jpg",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sunt quis, odit mollitia maxime hic adipisci culpa et error optio.",
         button: "Read more...",
         longtext: `<h2>What was the money or product used for?</h2>
@@ -301,7 +301,7 @@ export const news = [{
     {
         id: "egyenlore-nincsen-16",
         title: "egyelore nincsen",
-        photo: "/article2.jpeg",
+        photo: "https://barna-molnar.github.io/Dogs/article2.jpeg",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sunt quis, odit mollitia maxime hic adipisci culpa et error optio.",
         button: "Read more...",
         longtext: `<h2>What was the money or product used for?</h2>
@@ -321,7 +321,7 @@ export const news = [{
     {
         id: "egyenlore-nincsen-17",
         title: "egyelore nincsen",
-        photo: "/article1.png",
+        photo: "https://barna-molnar.github.io/Dogs/article1.png",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sunt quis, odit mollitia maxime hic adipisci culpa et error optio.",
         button: "Read more...",
         longtext: `<h2>What was the money or product used for?</h2>
@@ -341,7 +341,7 @@ export const news = [{
     {
         id: "egyenlore-nincsen-18",
         title: "egyelore nincsen",
-        photo: "/article2.jpeg",
+        photo: "https://barna-molnar.github.io/Dogs/article2.jpeg",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sunt quis, odit mollitia maxime hic adipisci culpa et error optio.",
         button: "Read more...",
         longtext: `<h2>What was the money or product used for?</h2>
@@ -361,7 +361,7 @@ export const news = [{
     {
         id: "egyenlore-nincsen-19",
         title: "egyelore nincsen",
-        photo: "/article3.jpg",
+        photo: "https://barna-molnar.github.io/Dogs/article3.jpg",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sunt quis, odit mollitia maxime hic adipisci culpa et error optio.",
         button: "Read more...",
         longtext: `<h2>What was the money or product used for?</h2>
@@ -381,7 +381,7 @@ export const news = [{
     {
         id: "egyenlore-nincsen-20",
         title: "egyelore nincsen",
-        photo: "/article2.jpeg",
+        photo: "https://barna-molnar.github.io/Dogs/article2.jpeg",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sunt quis, odit mollitia maxime hic adipisci culpa et error optio.",
         button: "Read more...",
         longtext: `<h2>What was the money or product used for?</h2>
@@ -401,7 +401,7 @@ export const news = [{
     {
         id: "egyenlore-nincsen-21",
         title: "egyelore nincsen",
-        photo: "/article1.png",
+        photo: "https://barna-molnar.github.io/Dogs/article1.png",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sunt quis, odit mollitia maxime hic adipisci culpa et error optio.",
         button: "Read more...",
         longtext: `<h2>What was the money or product used for?</h2>
@@ -421,7 +421,7 @@ export const news = [{
     {
         id: "egyenlore-nincsen-22",
         title: "egyelore nincsen",
-        photo: "/article2.jpeg",
+        photo: "https://barna-molnar.github.io/Dogs/article2.jpeg",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sunt quis, odit mollitia maxime hic adipisci culpa et error optio.",
         button: "Read more...",
         longtext: `<h2>What was the money or product used for?</h2>
@@ -441,7 +441,7 @@ export const news = [{
     {
         id: "egyenlore-nincsen-23",
         title: "egyelore nincsen",
-        photo: "/article3.jpg",
+        photo: "https://barna-molnar.github.io/Dogs/article3.jpg",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sunt quis, odit mollitia maxime hic adipisci culpa et error optio.",
         button: "Read more...",
         longtext: `<h2>What was the money or product used for?</h2>
@@ -461,7 +461,7 @@ export const news = [{
     {
         id: "egyenlore-nincsen-24",
         title: "egyelore nincsen",
-        photo: "/article2.jpeg",
+        photo: "https://barna-molnar.github.io/Dogs/article2.jpeg",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sunt quis, odit mollitia maxime hic adipisci culpa et error optio.",
         button: "Read more...",
         longtext: `<h2>What was the money or product used for?</h2>
