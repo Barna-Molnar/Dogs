@@ -2,7 +2,7 @@ export const dogData = [
 
     {
         name: "Shitzi",
-        photo: "/whatsaupdogs.jpg",
+        photo: "https://barna-molnar.github.io/Dogs/whatsaupdogs.jpg",
         headline: "Lorem ipsum",
         text: "lorem ipsum dolor sit amen valami de nem irja automatikusan es nekem kurvara nincsne kedvem ennel t0bbet beleirni",
         date: '2010-01-05',
@@ -14,7 +14,7 @@ export const dogData = [
 
     {
         name: "frbulldog",
-        photo: "/franciabull1x1.jpg",
+        photo: "https://barna-molnar.github.io/Dogs/franciabull1x1.jpg",
         headline: "Lorem ipsum",
         text: "lorem ipsum dolor sit amen valami de nem irja automatikusan es nekem kurvara nincsne kedvem ennel t0bbet beleirni",
         date: '2000-02-05',
@@ -26,7 +26,7 @@ export const dogData = [
 
     {
         name: "Ali",
-        photo: "/IMG-1584223733316.jpg",
+        photo: "https://barna-molnar.github.io/Dogs/IMG-1584223733316.jpg",
         headline: "Lorem ipsum",
         text: "lorem ipsum dolor sit amen valami de nem irja automatikusan es nekem kurvara nincsne kedvem ennel t0bbet beleirni",
         date: '2020-03-05',
@@ -39,7 +39,7 @@ export const dogData = [
 
     {
         name: "frbullfall",
-        photo: "/Französische-Bulldogge-im-Erbst-1x1.jpg",
+        photo: "https://barna-molnar.github.io/Dogs/Französische-Bulldogge-im-Erbst-1x1.jpg",
         headline: "Lorem ipsum",
         text: "lorem ipsum dolor sit amen valami de nem irja automatikusan es nekem kurvara nincsne kedvem ennel t0bbet beleirni",
         date: '2010-04-05',
@@ -52,7 +52,7 @@ export const dogData = [
 
     {
         name: "Brownpit",
-        photo: "/Brownpit.jpg",
+        photo: "https://barna-molnar.github.io/Dogs/Brownpit.jpg",
         headline: "Lorem ipsum",
         text: "lorem ipsum dolor sit amen valami de nem irja automatikusan es nekem kurvara nincsne kedvem ennel t0bbet beleirni",
         date: '2018-05-05',
@@ -65,7 +65,7 @@ export const dogData = [
     },
     {
         name: "Cukikutya",
-        photo: "/Cukikutya.jpg",
+        photo: "https://barna-molnar.github.io/Dogs/Cukikutya.jpg",
         headline: "Lorem ipsum",
         text: "lorem ipsum dolor sit amen valami de nem irja automatikusan es nekem kurvara nincsne kedvem ennel t0bbet beleirni",
         date: '2019-06-05',
@@ -77,7 +77,7 @@ export const dogData = [
     },
     {
         name: "Kidpit",
-        photo: "/Kidpit.jpg",
+        photo: "https://barna-molnar.github.io/Dogs/Kidpit.jpg",
         headline: "Lorem ipsum",
         text: "lorem ipsum dolor sit amen valami de nem irja automatikusan es nekem kurvara nincsne kedvem ennel t0bbet beleirni",
         date: '2019-06-05',
@@ -89,7 +89,7 @@ export const dogData = [
     },
     {
         name: "Babybul3",
-        photo: "/Babybul3.jpg",
+        photo: "https://barna-molnar.github.io/Dogs/Babybul3.jpg",
         headline: "Lorem ipsum",
         text: "lorem ipsum dolor sit amen valami de nem irja automatikusan es nekem kurvara nincsne kedvem ennel t0bbet beleirni",
         date: '2010-07-05',
@@ -101,7 +101,7 @@ export const dogData = [
     },
     {
         name: "OldBully",
-        photo: "/oldfashion.jpg",
+        photo: "https://barna-molnar.github.io/Dogs/oldfashion.jpg",
         headline: "Lorem ipsum",
         text: "lorem ipsum dolor sit amen valami de nem irja automatikusan es nekem kurvara nincsne kedvem ennel t0bbet beleirni",
         date: '2012-07-05',
